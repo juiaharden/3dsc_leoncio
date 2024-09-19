@@ -1,0 +1,22 @@
+// IMPORTAR MODULO FS/NODE
+const fs = require('node:fs');
+//console.log(fs)
+fs.readFile('./docs/index.html', 'utf-8',
+function (err,arquivo) {
+  //CODE
+  if(err) {
+      console.error("Errooouuu...." + err);
+  } else {
+    //console.log(arquivo)
+   // console.log(arquivo.toString());
+    //PARSEAR JSON
+    // const dados = JSON.parse(arquivo);
+    // console.log(dados.nome);
+    // console.log(dados.profissao);
+    // console.log(dados.idade);
+    console.log(arquivo)
+  }
+});
+
+
+//IMPORTAR O MODULO FS
